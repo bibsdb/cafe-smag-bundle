@@ -1,0 +1,13 @@
+{
+    "name": "bibsdb/cafe-smag-bundle",
+    "description": "Bibsdb cafe-smag template.",
+    "type": "symfony-bundle",
+    "minimum-stability": "dev",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Bibsdb\\CafeSmagBundle\\": ""
+        }
+    }
+}
