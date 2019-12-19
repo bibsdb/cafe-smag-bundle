@@ -1,0 +1,104 @@
+@import "compass/css3";
+@import "_shared-base.scss";
+
+@mixin text-shadow($x1:2px, $y1:2px, $blur1:5px, $color1:black, $x2:null, $y2:null, $blur2:null, $color2:null){
+  @if ($x2) {
+   text-shadow: $x1 $y1 $blur1 $color1, $x2 $y2 $blur2 $color2; 
+  }
+  @else {
+    text-shadow: $x1 $y1 $blur1 $color1;
+  }
+}
+
+
+@font-face {
+  font-family: 'Conv_TipoType - Brother-1816-Book';
+  src: url('../../../../assets/fonts/TipoType - Brother-1816-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Conv_TipoType - Brother-1816-ExtraBold';
+  src: url('../../../../assets/fonts/TipoType - Brother-1816-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brother 1816 - Bold';
+  src: url('../../../../assets/fonts/Brother-1816-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brother 1816 - Medium';
+  src: url('../../../../assets/fonts/Brother-1816-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// This loads the bg-img on screen
+body.ng-scope {
+  background-color: transparent;
+  background-image: url("../../../../assets/images/bg-with-logo.jpg");
+}
+
+// This loads the bg-img on edit
+.smag-with-logo {
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../../../assets/images/bg-with-logo.jpg");
+
+  // Maintain font.
+  pre {
+    margin: 0;
+    text-align: left;
+  }
+}
+.smag-with-logo--bodytext-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.smag-with-logo--bodytext-inner {
+  position: absolute;
+  top: 0;
+  padding: 5% 5% 15% 15%;
+  padding-right: 45%;
+  text-align: left;
+}
+
+.smag-with-logo--title {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Conv_TipoType - Brother-1816-ExtraBold", sans-serif;
+  font-size: 150%;
+  color: #009b3d;
+  @include text-shadow(2px,2px,2px,rgba(0,0,0,.50));
+  padding-bottom: 3%;
+}
+
+
+.smag-with-logo--bodytext {
+  @extend %inline-textarea;
+
+  &.has-placeholder {
+    @extend %show-placeholder-text;
+  }
+
+  font-family: "Brother 1816 - Bold", sans-serif;
+  font-size: 80%;
+  @include text-shadow(2px,2px,2px,rgba(0,0,0,.50));
+}
+
+
+

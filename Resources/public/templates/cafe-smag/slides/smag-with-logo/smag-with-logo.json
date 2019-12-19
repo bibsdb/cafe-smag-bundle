@@ -1,0 +1,35 @@
+{
+  "id": "smag-with-logo",
+  "type": "slide",
+  "name": "Smag template med logo",
+  "icon": "smag-with-logo.png",
+  "paths": {
+    "live": "smag-with-logo.html",
+    "edit": "smag-with-logo-edit.html",
+    "preview": "smag-with-logo.html",
+    "css": "smag-with-logo.css",
+    "js": "bundles/os2displaydefaulttemplate/templates/js/baseSlide.js"
+  },
+  "orientation": "landscape",
+  "slide_type": "base",
+  "media_type": "image",
+  "script_id": "base",
+  "ideal_dimensions": {
+    "width": "1920",
+    "height": "1080"
+  },
+  "empty_options": {
+    "fontsize": "30",
+    "bgcolor": "#ffffff",
+    "textcolor": "#ffffff",
+    "place": "",
+    "title": "",
+    "bodytext": ""
+  },
+  "tools": [
+    {
+      "name": "Tekst",
+      "id": "text-editor"
+    }
+  ]
+}
