@@ -59,13 +59,14 @@
 }
 
 .smag-no-logo--bodytext-inner {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 5% 6% 15% 18%;
   text-align: left;
-  padding: 5% 5% 15% 16%;
 }
+
 .has-photo .smag-no-logo--bodytext-inner {
-  padding-right: 45%;
+  padding-right: 48%;
 }
 
 .smag-no-logo--title {
