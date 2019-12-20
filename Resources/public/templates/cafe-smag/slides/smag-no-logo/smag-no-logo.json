@@ -26,10 +26,15 @@
     "title": "",
     "bodytext": ""
   },
+  
   "tools": [
     {
       "name": "Tekst",
       "id": "text-editor"
+    },
+    {
+      "name": "Foto",
+      "id": "logo-editor"
     }
   ]
 }

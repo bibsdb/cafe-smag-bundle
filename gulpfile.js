@@ -30,7 +30,8 @@ var banner = [
 var templates = {
   'cafe-smag': {
     'slides': [
-      'cafe-smag'
+      'smag-no-logo',
+      'smag-with-logo'
     ]
   }
 };
