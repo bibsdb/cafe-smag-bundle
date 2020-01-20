@@ -61,17 +61,16 @@
 .smag-no-logo--bodytext-inner {
   position: absolute;
   top: 0;
-  padding: 5% 6% 15% 18%;
+  padding: 5% 6% 6% 18%;
   text-align: left;
 }
 
 .has-photo .smag-no-logo--bodytext-inner {
-  padding-right: 48%;
+  padding: 5% 6% 15% 5%;
 }
 
 .smag-no-logo--title {
   @extend %inline-textarea;
-
   &.has-placeholder {
     @extend %show-placeholder-text;
   }
@@ -79,8 +78,15 @@
   font-family: "Conv_TipoType - Brother-1816-ExtraBold", sans-serif;
   font-size: 180%;
   color: #009b3d;
-  @include text-shadow(2px,2px,2px,rgba(0,0,0,.50));
+  @include text-shadow(5px,5px,5px,rgba(0,0,0,.50));
   padding-bottom: 3%;
+}
+
+.has-photo .smag-no-logo--title {
+  text-shadow: -1px 1px 2px whitesmoke,
+  1px 1px 2px whitesmoke,
+  1px -1px 0 whitesmoke,
+  -1px -1px 0 whitesmoke;
 }
 
 
@@ -114,17 +120,26 @@
   width: 960px;
 }
 
+.overview--preview .preview--slide .smag-no-logo--background-image {
+  background-size: contain;
+  height: 169px;
+  width: 300px;
+}
+
 .smag-no-logo--photo {
   position: absolute;
-  width: 700px;
-  height: 525px;
   top: 0;
-  right: 5%;
-  margin-top: 8%;
+  left: 0;
   object-fit: cover;
 }
 
 .preview--slide .smag-no-logo--photo {
-  width: 350px;
-  height: 262px;
+  width: 960px;
+  height: 540px;
+}
+
+.overview--preview .preview--slide .smag-no-logo--photo {
+  background-size: contain;
+  height: 169px;
+  width: 300px;
 }

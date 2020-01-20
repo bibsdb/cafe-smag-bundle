@@ -68,7 +68,7 @@ body.ng-scope {
 .smag-with-logo--bodytext-inner {
   position: absolute;
   top: 0;
-  padding: 5% 5% 15% 16%;
+  padding: 5% 5% 6% 16%;
   padding-right: 45%;
   text-align: left;
 }
@@ -116,4 +116,10 @@ body.ng-scope {
   background-size: contain;
   height: 540px;
   width: 960px;
+}
+
+.overview--preview .preview--slide .smag-with-logo--background-image {
+  background-size: contain;
+  height: 169px;
+  width: 300px;
 }

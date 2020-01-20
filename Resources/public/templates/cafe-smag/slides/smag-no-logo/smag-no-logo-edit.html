@@ -1,5 +1,6 @@
 <div class="smag-no-logo" data-ng-class="{'has-photo': ikSlide.currentLogo}" data-ng-style="{'width': theStyle.width, 'height': theStyle.height, 'font-size': theStyle.fontsize, 'position': 'relative'}">
   <div class="smag-no-logo--background-image"></div>
+  <img class="smag-no-logo--photo" data-ng-show="ikSlide.currentLogo" data-ng-src="{{ikSlide.currentLogo}}" />
   <div class="smag-no-logo--bodytext-wrapper">
     <div class="smag-no-logo--bodytext-inner">
       <textarea auto-grow class="smag-no-logo--title has-placeholder" data-ng-trim="false" placeholder="Tilføj en titel" data-ng-model="ikSlide.options.title" spellcheck="false">
@@ -9,6 +10,6 @@
     </div>
   </div>
 
-  <img class="smag-no-logo--photo" data-ng-show="ikSlide.currentLogo" data-ng-src="{{ikSlide.currentLogo}}" />
+  
 
 </div>

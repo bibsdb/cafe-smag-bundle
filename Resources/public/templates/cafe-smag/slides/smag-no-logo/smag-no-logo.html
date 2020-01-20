@@ -1,5 +1,6 @@
 <div class="smag-no-logo" data-ng-class="{'has-photo': ikSlide.currentLogo}" data-ng-style="{'background-color': ikSlide.options.bgcolor, 'width': theStyle.width, 'height': theStyle.height, 'font-size': theStyle.fontsize, 'position': 'relative'}">
   <div class="smag-no-logo--background-image"></div>
+  <img class="smag-no-logo--photo" data-ng-show="ikSlide.currentLogo" data-ng-src="{{ikSlide.currentLogo}}" />
   <div class="smag-no-logo--bodytext-wrapper">
     <div class="smag-no-logo--bodytext-inner">
       <pre class="smag-no-logo--title">{{ikSlide.options.title}}</pre>
@@ -7,7 +8,4 @@
       
     </div>
   </div>
-
-  <img class="smag-no-logo--photo" data-ng-show="ikSlide.currentLogo" data-ng-src="{{ikSlide.currentLogo}}" />
-
 </div>
